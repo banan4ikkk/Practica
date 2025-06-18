@@ -1,364 +1,153 @@
 <!DOCTYPE html>
-<html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lagoona</title>
-        
-        <link rel="stylesheet" href="fonts/stylesheet.css">
-        
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-      <header>
-        <div class="container">
-          <nav class="header_top">
-            <div class="header_left">
-              <a href="#" class="header_logo"><img src="images/logo.svg" alt="header_logo"></a>
-              <a href="tel:+373 67 71-58-26" class="header_phone">+373 67 71-58-26</a>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Autoservice KM Zero</title>
+  <link rel="icon" href="Images/icon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&subset=cyrillic-ext" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo">KM Zero</div>
+        <nav class="nav" id="nav">
+          <a href="#about" data-scroll="#about" class="nav__link">About</a>
+          <a href="#services" data-scroll="#services" class="nav__link">Services</a>
+          <a href="#feedback" data-scroll="#feedback" class="nav__link">Feedback</a>
+          <a href="#contact" data-scroll="#contact" class="nav__link">Contact</a>
+        </nav>
+        <div class="nav-toggle" id="navToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="intro">
+    <div class="container">
+      <div class="intro__inner">
+        <h1 class="intro__title">Welcome To Autoservice KM Zero</h1>
+        <a class="btn" href="#services" data-scroll="#services">Show More</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" id="about">
+    <div class="container">
+
+      <div class="section__header">
+        <h2 class="section__title">Story about us</h2>
+        <div class="section__text">
+          <p>
+            Autoservice KM Zero is a well-known car service center that has been providing quality services to car owners for years.
+            Located in the heart of the city, it’s a go-to destination for anyone looking to repair or maintain their vehicle.
+          </p>
+          <p>
+            The name KM Zero symbolizes a fresh start, indicating that the service center helps customers reset their cars to optimal
+            condition, as if starting from zero kilometers. This idea reflects their philosophy of providing reliable and efficient
+            solutions for all car problems.
+          </p>
+          <p>
+            At KM Zero, the staff is highly trained and experienced. They offer a wide range of services, including oil changes,
+            brake repairs, tire replacements, engine diagnostics, and bodywork. The service center is equipped with modern tools and
+            advanced diagnostic equipment, ensuring precise and professional work.
+          </p>
+          <p>
+            What makes KM Zero stand out is its customer-first approach. They believe in transparency, explaining every repair process
+            in detail and offering fair prices. Customers appreciate the welcoming atmosphere and the technicians' willingness to answer
+            all their questions.
+          </p>
+          <p>
+            In addition to regular repairs, KM Zero also provides emergency roadside assistance. If your car breaks down unexpectedly,
+            their team will come to your location and help get your vehicle back on the road.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__item" data-modal="team">
+          <div class="card__inner">
+            <div class="card__img">
+              <img src="images/intro.jpg" alt="">
             </div>
-            <div class="header_right">
-              <a href="#" class="personal_account">Личный кабинет</a>
-            </div>
-          </nav>
-          <div class="header_bottom">
-            <ul class="header_menu">
-              <li class="header_menu_item"><a href="#about">О нас</a></li>
-              <li class="header_menu_item"><a href="#service">Услуги</a></li>
-              <li class="header_menu_item"><a href="#advantage">Преимущества</a></li>
-              <li class="header_menu_item"><a href="#placement">Размещение</a></li>
-              <li class="header_menu_item"><a href="#">Блог</a></li>
-              <li class="header_menu_item"><a href="#">Контакты</a></li>
-            </ul>
-            <div class="menu_right">
-              <a href="#" class="header_btn">Хочу тур</a>
-              <button class="header_btn">Обратный звонок</button>
-            </div>
+            <div class="card__text">Team KM Zero</div>
           </div>
         </div>
-      </header>
 
-      <main>
-        <section class="offer">
-          <div class="container">
-            <h2 class="section_title">Спецпредложения</h2>
-            <div class="offer_items">
-              <div class="offer_items_left">
-                <div class="offer_item">
-                  <h3 class="offer_item_title">Мальдивские острова</h3>
-                  <p class="offer_price">от 55 000 ₽</p>
-                  <a href="#">Подробнее</a>
-                </div>
-                <div class="offer_item">
-                  <h3 class="offer_item_title">Горящий тур на остров Крит</h3>
-                  <p class="offer_price">от 30 000 ₽</p>
-                  <a href="#">Подробнее</a>
-                </div>
-              </div>
-              <div class="offer_items_right">
-                <div class="offer_item">
-                  <h3 class="offer_item_title">Номера категории люкс</h3>
-                  <p class="offer_price">от 5 000 ₽</p>
-                  <a href="#">Подробнее</a>
-                </div>
-              </div>
+        <div class="card__item" data-modal="building">
+          <div class="card__inner">
+            <div class="card__img">
+              <img src="images/intro5.jpg" alt="">
             </div>
+            <div class="card__text">Building KM Zero</div>
           </div>
-        </section>
-        
-
-        <!-- about start -->
-        <section class="about" id="about">
-          <div class="container">
-            <h2 class="section_title">О нас</h2>
-            <p class="about_text">Идейные соображения высшего порядка, а также сложившаяся структура организации влечёт за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся структура организации требуют определения и уточнения существенных финансовых
-              и административных условий.</p>
-          </div>
-        </section>
-        <!-- about end -->
-
-        <!-- services start -->
-        <section class="services" id="service">
-          <div class="container">
-            <h2 class="section_title">Услуги</h2>
-            <ul class="service_items">
-
-              <li class="service_item">
-                <div class="item_info">
-                  <a href="#" class="service_item_title">Эксклюзивное обслуживание</a>
-                  <p class="service_item_text">Равным образом постоянный количественный рост и сфера нашей активности</p>
-                </div>
-              </li>
-              
-              <li class="service_item">
-                <div class="item_info">
-                  <a href="#" class="service_item_title">Аренда банкетных залов</a>
-                  <p class="service_item_text">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм</p>
-                </div>  
-              </li>
-
-              <li class="service_item">
-                <div class="item_info">
-                  <a href="#" class="service_item_title">Сауны, бассейны, бани, фитнес-залы</a>
-                  <p class="service_item_text">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
-                </div>
-              </li>
-
-              <li class="service_item">
-                <div class="item_info">
-                  <a href="#" class="service_item_title">Охраняемые автомобильные стоянк</a>
-                  <p class="service_item_text">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
-                </div>  
-              </li>
-              
-            </ul> 
-          </div> 
-        </section> 
-        <!-- services end -->
-
-        <!-- adventages start -->
-        <section class="adventages" id="advantage">
-          <div class="container">
-            <h2 class="section_title">Преимущества</h2>
-            <ul class="adventages_items">
-
-              <li class="adventages_item">
-                <p class="adventages_item_info">
-                  Идейные соображения высшего порядка, а также постоянный количественный рост
-                </p>
-              </li>
-
-              <li class="adventages_item">
-                <p class="adventages_item_info">
-                  Значимость этих проблем настолько очевидна, что вопрос остаётся открытым
-                </p>
-              </li>
-
-              <li class="adventages_item">
-                <p class="adventages_item_info">
-                  Таким образом реализация плановых заданий играет важную роль для понимания
-                </p>
-              </li>
-
-              <li class="adventages_item">
-                <p class="adventages_item_info">
-                  Повседневная практика показывает, что сложившаяся структура организации
-                </p>
-              </li>
-
-              <li class="adventages_item">
-                <p class="adventages_item_info">
-                  Равным образом рамки и место обучения кадров способствует подготовки сотрудника
-                </p>
-              </li>
-
-              <li class="adventages_item">
-                <p class="adventages_item_info">
-                  Консультация с активом влечёт за собой процесс внедрения услуг нашего сервиса
-                </p>
-              </li>
-
-              <li class="adventages_item">
-                <p class="adventages_item_info">
-                  Повседневная практика показывает, что дальнейшее развитие различных 
-                </p>
-              </li>
-
-              <li class="adventages_item">
-                <p class="adventages_item_info">
-                  Значимость этого настолько очевидна, что консультация наших экспертов помогает
-                </p>
-              </li>
-
-            </ul>
-          </div>
-        </section>
-        <!-- adventages end -->
-
-        <!-- placement start -->
-        <section class="placement" id="placement">
-        <div class="container">
-          <h2 class="section_title">Размещение</h2>
-          <ul class="placement_items">
-
-            <li class="placement_item">
-              <div class="item_img"><img src="images/place1.png" alt="place1"></div>
-              <div class="item_info">
-                <div class="info_top">
-                  <div class="item_price">
-                    <span class="to">от</span>
-                    <span class="price">4 698 ₽</span>
-                    <span>/ ночь</span>
-                  </div>
-                  <div class="item_stars">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                    <img src="images/star-empty.png" alt="Рейтинг фильма 4 из 5">
-                  </div>
-                </div>
-                <h3 class="item_name">Lagoona española</h3>
-                <p class="item_location">Барселона, Испания</p>
-                <a href="#" class="item_btn">Номера</a>
-              </div>
-            </li>
-
-            <li class="placement_item">
-              <div class="item_img"><img src="images/place2.png" alt="place2"></div>
-              <div class="item_info">
-                <div class="info_top">
-                  <div class="item_price">
-                    <span class="to">от</span><span class="price">5 148 ₽</span>/ ночь
-                  </div>
-                  <div class="item_stars">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                    <img src="images/star-empty.png" alt="Рейтинг фильма 4 из 5">
-                  </div>
-                </div>
-                <h3 class="item_name">Lagoona son típicas</h3>
-                <p class="item_location">Барселона, Испания</p>
-                <a href="#" class="item_btn">Номера</a>
-              </div>
-            </li>
-
-            <li class="placement_item">
-              <div class="item_img"><img src="images/place3.png" alt="place3"></div>
-              <div class="item_info">
-                <div class="info_top">
-                  <div class="item_price">
-                    <span class="to">от</span><span class="price">6 254 ₽</span>/ ночь
-                  </div>
-                  <div class="item_stars">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                  </div>
-                </div>
-                <h3 class="item_name">Lagoona de la guerra</h3>
-                <p class="item_location">Барселона, Испания</p>
-                <a  href="#" class="item_btn">Номера</a>
-              </div>
-            </li>
-
-            <li class="placement_item">
-              <div class="item_img"><img src="images/place4.png" alt="place4"></div>
-              <div class="item_info">
-                <div class="info_top">
-                  <div class="item_price">
-                    <span class="to">от</span><span class="price">6 320 ₽</span>/ ночь
-                  </div>
-                  <div class="item_stars">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                  </div>
-                </div>
-                <h3 class="item_name">Lagoona mentira piadosa</h3>
-                <p class="item_location">Барселона, Испания</p>
-                <a  href="#" class="item_btn">Номера</a>
-              </div>
-            </li>
-
-            <li class="placement_item">
-              <div class="item_img"><img src="images/place5.png" alt="place5"></div>
-              <div class="item_info">
-                <div class="info_top">
-                  <div class="item_price">
-                    <span class="to">от</span><span class="price">6 457 ₽</span>/ ночь
-                  </div>
-                  <div class="item_stars">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                    <img src="images/star-empty.png" alt="Рейтинг фильма 4 из 5">
-                  </div>
-                </div>
-                <h3 class="item_name">Lagoona empujar la creatividad</h3>
-                <p class="item_location">Барселона, Испания</p>
-                <a href="#" class="item_btn">Номера</a>
-              </div>
-            </li>
-
-            <li class="placement_item">
-              <div class="item_img"><img src="images/place6.png" alt="place6"></div>
-              <div class="item_info">
-                <div class="info_top">
-                  <div class="item_price">
-                    <span class="to">от</span><span class="price">6 320 ₽</span>/ ночь
-                  </div>
-                  <div class="item_stars">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                  </div>
-                </div>
-                <h3 class="item_name">Lagoona el retorno</h3>
-                <p class="item_location">Барселона, Испания</p>
-                <a href="#" class="item_btn">Номера</a>
-              </div>
-            </li>
-
-            <li class="placement_item">
-              <div class="item_img"><img src="images/place7.png" alt="place7"></div>
-              <div class="item_info">
-                <div class="info_top">
-                  <div class="item_price">
-                    <span class="to">от</span><span class="price">6 505 ₽</span>/ ночь
-                  </div>
-                  <div class="item_stars">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                  </div>
-                </div>
-                <h3 class="item_name">Lagoona mentira piadosa</h3>
-                <p class="item_location">Барселона, Испания</p>
-                <a href="#" class="item_btn">Номера</a>
-              </div>
-            </li>
-
-            <li class="placement_item">
-              <div class="item_img"><img src="images/place8.png" alt="place8"></div>
-              <div class="item_info">
-                <div class="info_top">
-                  <div class="item_price">
-                    <span class="to">от</span><span class="price">6 824 ₽</span>/ ночь
-                  </div>
-                  <div class="item_stars">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                    <img src="images/star.png" alt="Рейтинг фильма 4 из 5">
-                  </div>
-                </div>
-                <h3 class="item_name">Lagoona suerte siguió siempre</h3>
-                <p class="item_location">Барселона, Испания</p>
-                <a href="#" class="item_btn">Номера</a>
-              </div>
-            </li>
-
-            <li class="placement_item">
-              <a href="#">
-                Посмотреть все варианты
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
-                  <path d="M0.778175 1.22183L8.55635 9L0.778175 16.7782" stroke="white" stroke-width="2"/>
-                </svg>
-              </a>
-            </li>
-
-          </ul>
         </div>
-        </section>
-        <!-- placement end -->
-      </main>
 
-      <script src="js/script.js"></script>
-    </body>
-</html>
+        <div class="card__item" data-modal="workplace">
+          <div class="card__inner">
+            <div class="card__img">
+              <img src="images/introo.jpg" alt="">
+            </div>
+            <div class="card__text">Workplace KM Zero</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="modal-close">&times;</span>
+          <div id="modal-body"></div>
+        </div>
+      </div>
+      
+      <div id="modal-content-team" style="display:none;">
+        <h2>Team KM Zero</h2>
+        <img src="images/intro.jpg" alt="Team KM Zero" style="width:100%; margin-bottom: 10px;" />
+        <div class="all-description">
+          Team KM Zero is a dedicated group of skilled professionals specializing in automotive repair and maintenance.
+          With years of experience and a passion for cars, the team works together to provide high-quality services that ensure
+          customer vehicles run safely and efficiently. Their expertise covers everything from routine maintenance to complex diagnostics and repairs.
+          At Team KM Zero, customer satisfaction is the top priority. They use the latest tools and technologies to deliver reliable and timely service,
+          making sure each vehicle gets the attention it deserves. The team’s friendly approach and commitment to excellence have earned them a trusted
+          reputation in the auto service industry.
+        </div>
+      </div>
+
+      <div id="modal-content-building" style="display:none;">
+        <h2>Building KM Zero</h2>
+        <img src="images/intro5.jpg" alt="Building KM Zero" style="width:100%; margin-bottom: 10px;" />
+        <div class="all-description">
+          Building KM Zero is a state-of-the-art facility designed to support the high standards of automotive service and repair.
+          Equipped with modern tools, advanced diagnostic equipment, and spacious work areas, the building provides an efficient and comfortable environment
+          for both technicians and customers. Every detail has been carefully planned to ensure smooth workflow and quick turnaround times, making it possible
+          to handle a wide range of vehicle issues with precision and care. The building also incorporates sustainable design elements, reflecting KM Zero’s
+          commitment to environmental responsibility. From energy-efficient lighting to waste reduction practices, Building KM Zero aims to minimize its ecological
+          footprint while delivering top-quality service. This modern and eco-friendly workspace embodies the company’s dedication to innovation, quality, and customer satisfaction.
+        </div>
+      </div>
+
+      <div id="modal-content-workplace" style="display:none;">
+        <h2>Workplace KM Zero</h2>
+        <img src="images/introo.jpg" alt="Workplace KM Zero" style="width:100%; margin-bottom: 10px;" />
+        <div class="all-description">
+          Workplace KM Zero is a dynamic and collaborative environment designed to foster creativity, teamwork, and
+          productivity among its employees. The workspace is thoughtfully arranged with ergonomic furniture, modern technology, and open areas
+          that encourage communication and innovation. It serves as the hub where skilled professionals come together to plan, coordinate, and
+          deliver exceptional automotive services. Beyond functionality, Workplace KM Zero emphasizes employee well-being by providing comfortable
+          break areas, natural lighting, and quiet zones for focused work. This supportive atmosphere not only enhances job satisfaction but also drives
+          high performance, ensuring that the team can meet and exceed customer expectations every day.
+        </div>
+      </div>
+
+    </div>
+  </section>
