@@ -402,3 +402,245 @@ body{
 }
 
 @media (max-width: 990px) {
+/* Intro */
+
+  .intro__title {
+      font-size: 80px;
+  }
+
+  /* Services */
+  .services__item {
+      width: 50%;
+      padding-bottom: 0;
+  }
+}
+
+@media (max-width: 770px) {
+  .intro__title {
+    font-size: 80px;
+  }
+
+  .nav__link {
+    font-size: 12px;
+  }
+  /* Nav */
+  .nav {
+      display: none;
+  }
+
+
+  /* Section */
+  .section {
+      padding: 40px 0;
+  }
+
+  /* Card */
+  .card {
+      margin-top: 50px;
+      justify-content: center;
+  }
+
+  .card__item {
+      width: 100%;
+      max-width: 410px;
+      margin-bottom: 30px;
+  }
+
+  .card__item:last-child {
+      margin-bottom: 0;
+  }
+
+  /* Services */
+  .services {
+      justify-content: center;
+  }
+  .services, .contact {
+    flex-direction: column;
+  }
+  .services__item {
+      width: 100%;
+      max-width: 400px;
+      padding-left: 55px;
+      padding-right: 0;
+  }
+  .services__item, .contact__item {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+
+/* header */
+
+  .header__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+/* Nav */
+
+  .nav__link {
+    margin: 5px 0;
+    font-size: 10px;
+  }
+
+  /* Intro */
+ 
+  .intro__title {
+      font-size: 40px;
+  }
+
+  /* Button */
+  .btn {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+
+  /* Section */
+  .section {
+    padding: 40px 0;
+  }
+  
+  .section__header {
+      margin-bottom: 50px;
+  }
+
+  .section__title {
+      font-size: 20px;
+  }
+
+  .section__title:after {
+      margin: 18px auto;
+  }
+  .card__item {
+    width: 100%;
+  }
+
+  .feedback_form input,
+  .feedback_form textarea {
+    font-size: 0.9rem;
+  }
+
+  .feedback_form button {
+    font-size: 0.9rem;
+  }
+
+  .contact__title{
+    font-size: 25px;
+ 
+  }
+  .contact__text{
+    font-size: 12px;
+  
+  }
+  .map_container {
+    max-width: 100%;
+    height: 300px;
+  }
+  
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  display: block;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+/* Показывать бургер- меню на маленьких экранах */
+@media (max-width: 770px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    text-align: center;
+  }
+
+  .nav.nav--open {
+    display: flex;
+  }
+
+  .nav__link {
+    padding: 15px;
+    border-top: 1px solid #444;
+  }
+}
+
+@media (max-width: 770px) {
+  .card {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .card__item {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 30px;
+  }
+
+  .card__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top:0; left:0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 3000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: red;
+}
+
+.all-description {
+  max-width: 700px;   
+  margin: 0 auto;     
+  text-align: justify; 
+  font-size: 16px;    
+  line-height: 1.6;  
+  color: #333;        
+  padding: 10px;      
+}
